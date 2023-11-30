@@ -24,12 +24,45 @@ a , li {
 }
 /*==================INICIO HEADER==========================*/
 /*======================== INICIO ESTILOS HEADER: RESPONSIVE===============================*/
-@media (max-width:764px){
+@media (max-width:1493px){
     .checkbtn{
-        display: block;
-        text-align: right; /* Alinea el texto a la derecha */
+        display: none;
     }
 }
+
+@media (max-width:764px){
+    .df-header{
+        height: fit-content;
+    }
+    .df-ul{
+        flex-direction: column;
+        position: fixed;
+        width:100%;
+        left: -100%;
+        height: 100vh;
+        background: #494F50;
+        top:80px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .checkbtn{
+        display:block;
+    }
+    .df-ul li{
+        display: block;
+        line-height:20px;
+    }
+    .df-ul li {
+        font-size: 25px;
+    }
+    .df-ul li:hover, .df-ul li .active{
+        background:none;
+    }
+    #check:checked +.df-header .df-ul{
+        left: 0;
+    } 
+}
+
 /*==============================FIN ESTILOS HEADER:RESPONSIVE ===========================*/
 .df-header{
     display: flex;
@@ -41,30 +74,26 @@ a , li {
     height: 80px;
 }
 
-.checkbtn{
-    padding: 10px;
+.checkbtn img{
     cursor: pointer;
-    display: none;
+    width: 50px;
+    height: 50px;
 }
-
 #check{
     display: none;
 }
-
-.Logo{
+.logoBody{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.Logo img {
-    padding: 10;
-    overflow: auto;
-    height:70px;
+.logoBody img {
+    height: 70px;
     transition:all 0.3s;
 }
-.Logo img:hover{
+.logoBody img:hover{
     transform: scale(1.2);
 }
 .df-ul{
