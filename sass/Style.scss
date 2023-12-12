@@ -1,59 +1,60 @@
-@charset "UTF-8";
+
+
 /*@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:ital,wght@1,300&display=swap');*/
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@100;200&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@100;200&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+
 /*===================RESET CSS========================*/
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-a, li {
-    font-style: none;
+a , li {
+    font-style:none;
     text-decoration: none !important;
     list-style: none;
 }
 
 /*==================INICIO HEADER==========================*/
-.navbar {
+.navbar{
     background-color: #333333;
     opacity: 0.9;
     z-index: 800;
 }
-
-.navbar-nav {
-    justify-content: center;
+.navbar-nav{
+    justify-content:center;
     width: 100%;
     font-size: 16px;
     transition: all 0.5s;
 }
-
 .navbar .nav-link {
     color: #fff;
 }
-
-.navbar .nav-link:hover {
+.navbar .nav-link:hover{
     transform: scale(1.2);
     color: #ce7d35;
 }
-
-.navbar-nav .nav-item .nav-link.active {
-    color: #fff;
+.navbar-nav .nav-item .nav-link.active{
+    color:#fff;
 }
-
-.navbar-nav .nav-item .nav-link.active:hover {
+.navbar-nav .nav-item .nav-link.active:hover{
     transform: scale(1.2);
     color: #ce7d35;
 }
-
-.navbar-toggler {
+.navbar-toggler{
     color: #f3ebeb !important;
 }
-
-.logoBody {
+.logoBody{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,60 +64,59 @@ a, li {
 
 .logoBody img {
     height: 70px;
-    transition: all 0.3s;
+    transition:all 0.3s;
 }
-
-.logoBody img:hover {
+.logoBody img:hover{
     transform: scale(1.3);
 }
 
+
 /*=======================FIN HEADER=========================*/
+
 /*========================INICIO MAIN PRINCIPAL===============================*/
+
 .banner {
-    background-image: url(../images/fondoNegocio2.png);
-    background-size: cover; /*Define el tamaño de la imagen (alto y ancho)*/
+    background-image:url(../images/fondoNegocio2.png);
+    background-size:cover;/*Define el tamaño de la imagen (alto y ancho)*/
     min-height: 100vh;
     height: 100vh;
     border-radius: 5%;
 }
-
-.banner .titulos {
+.banner .titulos{
     height: 100%;
     backdrop-filter: blur(3px);
     display: flex;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     justify-content: center;
 }
-
-.titulos h1, h2 {
+.titulos h1,h2{
     text-align: center;
-    font-family: "Fredoka", sans-serif;
-    font-weight: bold;
+    font-family:'Fredoka', sans-serif;
+    font-weight:bold;
     font-size: 80px;
-    font-style: inherit;
+    font-style:inherit;
     font-weight: unset;
     letter-spacing: 5px;
-    color: hsla(252, 48%, 8%, 0.884);
+    color:hsla(252, 48%, 8%, 0.884);
 }
-
-.titulos h2 {
+.titulos h2{
     font-size: 80px;
-    color: hsla(252, 48%, 8%, 0.884);
+    color:hsla(252, 48%, 8%, 0.884);
 }
-
-.fondo {
-    background: linear-gradient(rgba(60, 64, 77, 0.8), rgba(199, 202, 204, 0.8));
+.fondo{
+    background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(199, 202, 204, 0.8));
     width: auto;
     padding-left: 50px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 115%;
     padding-top: 15px;
 }
 
 /*=============================INICIO PAGES INDEX===============================*/
 /*============================INICIO DE BLOQUE OFERTAS==================================*/
-.ofertasFlex {
+
+.ofertasFlex{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -125,158 +125,146 @@ a, li {
     flex-wrap: wrap;
     background-color: #c1b4ae;
 }
-
-.flex1 {
+.flex1{
     display: flex;
     width: 280px;
     height: 350px;
-    background-color: rgba(14, 13, 13, 0.6784313725);
+    background-color:#0e0d0dad;
     align-items: center;
     align-content: space-around;
     justify-content: center;
     flex-direction: column;
     border-radius: 15%;
 }
-
-.flex1 img {
+.flex1 img{
     width: 190px;
     height: 190px;
+    
 }
-
-.flex1 h3, h4 {
+.flex1 h3, h4{
     text-align: center;
     color: white;
     padding: 5px;
     font-size: 22px;
-    font-family: "Roboto";
+    font-family:'Roboto';
     padding-top: 5px;
 }
-
-.flex1 h4 {
+.flex1 h4{
     color: white;
     font-size: 17px;
 }
-
 /*=====================FIN DE BLOQUE OFERTAS*============================/
 
 /*=====================FIN PAGE INDEX==================================*/
+
 /*======================INICIO PAGES BEBIDAS============================*/
-.fondoBebidas {
-    background: linear-gradient(rgba(60, 64, 77, 0.8), rgba(0, 0, 0, 0.8));
+.fondoBebidas{
+    background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(0, 0, 0, 0.8));
     width: 100%;
 }
-
-.df-UlBebidas {
+.df-UlBebidas{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
 }
-
-.df-UlBebidas li a {
+.df-UlBebidas li a{
     margin: 19px;
-    font-family: "Roboto";
+    font-family:'Roboto';
     color: #ddd;
 }
-
-.accordion-button {
-    font-family: "Roboto";
-    font-size: 18px !important;
+.accordion-button{
+    font-family: 'Roboto';
+    font-size:18px !important;
 }
-
 .containerBebidas {
     background-image: url(../images/bebidas3.jpg);
-    background-size: contain;
-    width: 100%;
+    background-size:contain;
+    width:100%;
     display: flex;
     align-content: center;
     justify-content: flex-start;
     flex-direction: column;
 }
-
-#accordionFlushExample {
+#accordionFlushExample{
     margin-top: 30px;
     width: 50%;
     margin-left: 25%;
-    opacity: 0.9;
+    opacity:0.9;
 }
-
-#accordionFlushExample1 {
+#accordionFlushExample1{
     width: 50%;
     margin-left: 25%;
-    opacity: 0.9;
+    opacity:0.9;
     margin-bottom: 30px;
 }
-
-.table {
+.table{
     width: 100%;
     border: 1px solid #463a3a;
-    border-collapse: collapse; /*Esta propiedad estable si los bordes de la tabla deben colapsarse en un solo borde o separarse*/
+    border-collapse:collapse; /*Esta propiedad estable si los bordes de la tabla deben colapsarse en un solo borde o separarse*/
     margin: 0;
     padding: 0;
-    table-layout: fixed; /*TE AYUDA A CARGAR MAS RAPIDO LOS DATOS Y SE ACOMODAN LOS ANCHOS DE LA TABLA*/
+    table-layout:fixed; /*TE AYUDA A CARGAR MAS RAPIDO LOS DATOS Y SE ACOMODAN LOS ANCHOS DE LA TABLA*/
 }
 
 /*Modificamos las filas de la tabla*/
-.table tr {
+.table tr{
     border: 1px solid #1d0606;
 }
-
 /*Modificamos los titulos y datos de la tabla*/
-.table th, .table td {
+.table th, .table td{
     font-size: 17px;
     padding: 10px;
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
-
-.table thead th {
+.table thead th{
     text-transform: uppercase;
     background-color: #f3ebeb;
 }
 
-.table tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+.table tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
-.table tbody td:hover {
+.table tbody td:hover{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*===========================FIN PAGE: BEBIDAS======================*/
 /*===================INICIO PAGE: COMO COMPRAR?=================*/
-.containerConsulta {
+
+.containerConsulta{
     text-align: center;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
-    background-color: #c1b4ae;
+    background-color:#c1b4ae;
     width: 100%;
 }
-
-#accordionExample {
+#accordionExample{
     height: 100%;
     margin: 60px;
     font-size: 19px;
 }
-
-.containerConsulta h1 {
+.containerConsulta h1{
     margin-top: 15px;
 }
 
 /*===================FIN PAGE: COMO COMPRAR?========================*/
 /*============= INICIO DE PAGINA: CONTACTO===========================*/
-.df-Contacto {
+
+.df-Contacto{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 20px 0;
     font-size: 19px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
 
-.formulario {
+.formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,41 +274,36 @@ a, li {
     border-radius: 8px;
     padding: 15px;
     color: white;
-    background: linear-gradient(0deg, rgb(84, 181, 182) 0%, rgb(29, 27, 21) 100%);
+    background: linear-gradient(0deg, rgba(84,181,182,1) 0%, rgba(29,27,21,1) 100%);
 }
-
-.contenidoForm {
+.contenidoForm{
     width: 50%;
     padding: 30px;
     text-align: center;
 }
-
-.estilo-form {
+.estilo-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.label-Form {
+.label-Form{
     text-align: center;
     width: 300px;
 }
-
-.inputForm {
+.inputForm{
     display: block;
     width: 300px;
     border-radius: 5px;
     font-size: 16px;
     margin-top: 5px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     text-align: center;
     outline: none;
     padding: 10px;
     border: 1px solid #ccc;
 }
-
-.bottonForm {
+.bottonForm{
     outline: none;
     color: #fff;
     background-color: #333333;
@@ -331,36 +314,37 @@ a, li {
     padding: 10px;
     border-radius: 4px;
 }
-
-.bottonForm:hover {
-    background-color: #ce7d35;
+.bottonForm:hover{
+    background-color:#ce7d35;   
 }
 
 /*=========== FIN DE PAGINA: CONTACTO====================================*/
 /*===============INICIO DE PAGINA: CONOCENOS=============================*/
+
+
 /*===================FIN DE PAGINA: CONOCENOS=============================*/
 /*========================================FIN DE MAIN===========================================*/
+
 /*==========================INICIO FOOTER=====================*/
-.bg-footer {
+.bg-footer{
     background-color: #494F50;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     height: auto;
 }
 
-.logoFooter img {
+.logoFooter img{
     height: 115px;
     padding: 5px 10px;
     transition: all 0.5s;
 }
-
-.logoFooter img:hover {
+.logoFooter img:hover{
     transform: scale(1.3);
 }
 
-.df-links {
+.df-links{
     display: block;
     align-items: center;
     justify-content: center;
@@ -368,129 +352,124 @@ a, li {
     padding-left: 0;
 }
 
-.links .df-links {
+.links .df-links{
     margin: 15px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
 }
-
-.df-links li a {
+.df-links li a{
     color: #ddd;
     transition: all 0.5s;
 }
-
-.df-links li a:hover {
+.df-links li a:hover{
     color: #ce7d35;
     transform: scale(1.3) !important;
 }
-
 .redes img {
     height: 50px;
     padding: 5px 5px;
     transition: all 0.5s;
 }
-
-.redes img:hover {
+.redes img:hover{
     transform: scale(1.3);
 }
 
 /*=======================FIN DEL FOOTER================================*/
+
 /*Responsive*/
 /*====================ESTILO MAIN RESPONSIVE=========================*/
-@media (max-width: 768px) {
-    .banner .titulos h1 {
-    font-size: 40px;
+@media(max-width:768px){
+    .banner .titulos h1{
+        font-size: 40px;
     }
-    .banner .titulos h2 {
-    font-size: 40px;
+    .banner .titulos h2{
+        font-size: 40px;
     }
 }
-@media (max-width: 375px) {
-    .banner .titulos h1 {
-    font-size: 17px;
+@media (max-width:375px){
+    .banner .titulos h1{
+        font-size: 17px;
     }
-    .banner .titulos h2 {
-    font-size: 17px;
+    .banner .titulos h2{
+        font-size: 17px;
     }
 }
 /*======================FIN ESTILO RESPONSIVE MAIN====================================*/
 /*=======================ESTILOS PAGE BEBIDAS: SIST RESPONSIVO ========================*/
-@media (max-width: 768px) {
-  .table {
-    border: 0px;
-  }
-  .table caption {
-    font-size: 20px;
-  }
-  .table thead {
-    display: none;
-  }
-  .table tr {
-    margin-bottom: 8px;
-    border-bottom: 4px solid #ddd;
-    display: block;
-  }
-  .table th, .table td {
-    font-size: 12px;
-  }
-  .table td {
-    display: block;
-    border-bottom: 1px solid #ddd;
-    text-align: right;
-  }
-  .table td:last-child {
-    border-bottom: 0px;
-  }
-  .table td::before {
-    content: attr(data-label);
-    text-transform: uppercase;
-    float: left;
-  }
+@media (max-width:768px) {
+    .table{
+        border:0px;
+    }
+    .table caption{
+        font-size: 20px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .table th, .table td{
+        font-size: 12px;
+    }
+    .table td{
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table td:last-child{
+        border-bottom:0px;
+    }
+    .table td::before{
+        content: attr(data-label);
+        text-transform: uppercase;
+        float: left;
+    }
 }
 /*===============FIN ESTILO RESPONSIVE DE PAGE BEBIDA=================*/
 /*MEDIA DE FORMULARIO CONTACTO*/
-@media (max-width: 435px) {
-  .contenidoForm {
-    width: min-content;
-    padding: 20px 5px;
-  }
-  .formulario {
-    width: min-content;
-    padding: 0 0 20px 0;
-  }
+@media(max-width:435px){
+    .contenidoForm{
+        width: min-content;
+        padding: 20px 5px;
+    }
+    .formulario{
+        width: min-content;
+        padding: 0 0 20px 0;
+    }
 }
 /*-----------------------------------*/
 /*=================INICIO ESTILOS FOOTER:SIST RESPONSIVO==================*/
-@media (max-width: 768px) {
-  .logoFooter img {
-    height: 70px;
-  }
-  .redes {
-    height: 50px;
-  }
-  .df-links {
-    font-size: 10px;
-  }
+@media (max-width:768px){
+    .logoFooter img{
+        height: 70px;   
+    }
+    .redes{
+        height: 50px;
+    }
+    .df-links {
+        font-size: 10px;
+    }
 }
-@media (max-width: 425px) {
-  .bg-footer {
-    align-items: center;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .bg-footer .logoFooter img {
-    height: 80px;
-  }
-  .bg-footer .redes {
-    height: 50px;
-    font-size: 20px;
-  }
-  .bg-footer .df-links li {
-    flex-direction: column;
-    text-align: center;
-    font-size: 16px;
-  }
+@media (max-width:425px){
+    .bg-footer{
+        align-items: center;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .bg-footer .logoFooter img{
+        height: 80px;
+    }
+    .bg-footer .redes{
+        height: 50px;
+        font-size: 20px;
+    }
+    .bg-footer .df-links li {
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+    }
 }
 /*======================================================================*/
-
-/*# sourceMappingURL=Style.css.map */
