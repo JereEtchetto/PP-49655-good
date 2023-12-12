@@ -1,11 +1,15 @@
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:ital,wght@1,300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto:ital,wght@1,300&display=swap');*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@100;200&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kalam&family=Luckiest+Guy&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,100;0,400;1,100;1,300&family=Solway:wght@800&family=Yanone+Kaffeesatz&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
 
 
 /*===================RESET CSS========================*/
@@ -22,25 +26,13 @@ a , li {
 }
 
 /*==================INICIO HEADER==========================*/
-/*======================== INICIO ESTILOS HEADER: RESPONSIVE===============================*/
-
-/*==============================FIN ESTILOS HEADER:RESPONSIVE ===========================*/
-/*.df-header{
-    display: flex;
-    justify-content:space-around;
-    align-items: center; 
-    background-color: #494F50;
-    flex-direction: row;
-    padding: 15px;
-    height: 80px;
-}*/
 .navbar{
     background-color: #333333;
     opacity: 0.9;
     z-index: 800;
 }
 .navbar-nav{
-    justify-content: end;
+    justify-content:center;
     width: 100%;
     font-size: 16px;
     transition: all 0.5s;
@@ -67,6 +59,7 @@ a , li {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding: 0 100px;
 }
 
 .logoBody img {
@@ -82,29 +75,6 @@ a , li {
 
 /*========================INICIO MAIN PRINCIPAL===============================*/
 
-/*====================ESTILO MAIN RESPONSIVE=========================*/
-@media(max-width:768px){
-    .banner{
-        height: 100vh;
-    }
-    .banner .titulos h1{
-        font-size: 40px;
-    }
-    .banner .titulos h2{
-        font-size: 40px;
-    }
-}
-@media (max-width:375px){
-    .banner{
-        height: 100vh;
-    }
-    .banner .titulos h1{
-        font-size: 20px;
-    }
-    .banner .titulos h2{
-        font-size: 20px;
-    }
-}
 .banner {
     background-image:url(../images/fondoNegocio2.png);
     background-size:cover;/*Define el tamaño de la imagen (alto y ancho)*/
@@ -122,17 +92,17 @@ a , li {
 }
 .titulos h1,h2{
     text-align: center;
-    font-family:'Kalam';
+    font-family:'Fredoka', sans-serif;
     font-weight:bold;
     font-size: 80px;
     font-style:inherit;
     font-weight: unset;
     letter-spacing: 5px;
-    color: #171219;
+    color:hsla(252, 48%, 8%, 0.884);
 }
 .titulos h2{
     font-size: 80px;
-    color: #171219;
+    color:hsla(252, 48%, 8%, 0.884);
 }
 .fondo{
     background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(199, 202, 204, 0.8));
@@ -144,7 +114,6 @@ a , li {
 }
 
 /*=============================INICIO PAGES INDEX===============================*/
-
 /*============================INICIO DE BLOQUE OFERTAS==================================*/
 
 .ofertasFlex{
@@ -189,13 +158,10 @@ a , li {
 /*=====================FIN PAGE INDEX==================================*/
 
 /*======================INICIO PAGES BEBIDAS============================*/
-
-
 .fondoBebidas{
     background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(0, 0, 0, 0.8));
     width: 100%;
 }
-
 .df-UlBebidas{
     display: flex;
     align-items: center;
@@ -204,8 +170,12 @@ a , li {
 }
 .df-UlBebidas li a{
     margin: 19px;
-    font-family: 'Roboto';
+    font-family:'Roboto';
     color: #ddd;
+}
+.accordion-button{
+    font-family: 'Roboto';
+    font-size:18px !important;
 }
 .containerBebidas {
     background-image: url(../images/bebidas3.jpg);
@@ -216,7 +186,6 @@ a , li {
     justify-content: flex-start;
     flex-direction: column;
 }
-
 #accordionFlushExample{
     margin-top: 30px;
     width: 50%;
@@ -262,81 +231,101 @@ a , li {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*===========================FIN PAGE: BEBIDAS======================*/
+/*===================INICIO PAGE: COMO COMPRAR?=================*/
 
-/*=======================ESTILOS PAGE BEBIDAS: SIST RESPONSIVO ========================*/
-@media (max-width:768px) {
-    .table{
-        border:0px;
-    }
-    .table caption{
-        font-size: 20px;
-    }
-    .table thead{
-        display: none;
-    }
-    .table tr{
-        margin-bottom: 8px;
-        border-bottom: 4px solid #ddd;
-        display: block;
-    }
-    .table th, .table td{
-        font-size: 12px;
-    }
-    .table td{
-        display: block;
-        border-bottom: 1px solid #ddd;
-        text-align: right;
-    }
-    .table td:last-child{
-        border-bottom:0px;
-    }
-    .table td::before{
-        content: attr(data-label);
-        text-transform: uppercase;
-        float: left;
-    }
+.containerConsulta{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    background-color:#c1b4ae;
+    width: 100%;
 }
-/*=======================FIN ESTILOS RESPONSIVE==============================*/
-/*===========================FIN PAGE BEBIDAS===============================*/
+#accordionExample{
+    height: 100%;
+    margin: 60px;
+    font-size: 19px;
+}
+.containerConsulta h1{
+    margin-top: 15px;
+}
+
+/*===================FIN PAGE: COMO COMPRAR?========================*/
+/*============= INICIO DE PAGINA: CONTACTO===========================*/
+
+.df-Contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 19px;
+    font-family: 'Roboto';
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(0deg, rgba(84,181,182,1) 0%, rgba(29,27,21,1) 100%);
+}
+.contenidoForm{
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+.estilo-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label-Form{
+    text-align: center;
+    width: 300px;
+}
+.inputForm{
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: 'Roboto';
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.bottonForm{
+    outline: none;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.bottonForm:hover{
+    background-color:#ce7d35;   
+}
+
+/*=========== FIN DE PAGINA: CONTACTO====================================*/
+/*===============INICIO DE PAGINA: CONOCENOS=============================*/
 
 
-/*======FIN DE MAIN========*/
+/*===================FIN DE PAGINA: CONOCENOS=============================*/
+/*========================================FIN DE MAIN===========================================*/
 
 /*==========================INICIO FOOTER=====================*/
-/*====================ESTILOS FOOTER:SIST RESPONSIVO==================*/
-@media (max-width:768px){
-    .logoFooter img{
-        height: 70px;   
-    }
-    .redes{
-        height: 50px;
-    }
-    .df-links {
-        font-size: 10px;
-    }
-}
-@media (max-width:425px){
-    .bg-footer{
-        align-items: center;
-        height:auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .bg-footer .logoFooter img{
-        height: 80px;
-    }
-    .bg-footer .redes{
-        height: 50px;
-        font-size: 20px;
-    }
-    .bg-footer .df-links li {
-        flex-direction: column;
-        text-align: center;
-        font-size: 16px;
-    }
-}
-/*======================================================================*/
-
 .bg-footer{
     background-color: #494F50;
     display: flex;
@@ -385,4 +374,101 @@ a , li {
 
 /*=======================FIN DEL FOOTER================================*/
 
-
+/*Responsive*/
+/*====================ESTILO MAIN RESPONSIVE=========================*/
+@media(max-width:768px){
+    .banner .titulos h1{
+        font-size: 40px;
+    }
+    .banner .titulos h2{
+        font-size: 40px;
+    }
+}
+@media (max-width:375px){
+    .banner .titulos h1{
+        font-size: 17px;
+    }
+    .banner .titulos h2{
+        font-size: 17px;
+    }
+}
+/*======================FIN ESTILO RESPONSIVE MAIN====================================*/
+/*=======================ESTILOS PAGE BEBIDAS: SIST RESPONSIVO ========================*/
+@media (max-width:768px) {
+    .table{
+        border:0px;
+    }
+    .table caption{
+        font-size: 20px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table tr{
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .table th, .table td{
+        font-size: 12px;
+    }
+    .table td{
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table td:last-child{
+        border-bottom:0px;
+    }
+    .table td::before{
+        content: attr(data-label);
+        text-transform: uppercase;
+        float: left;
+    }
+}
+/*===============FIN ESTILO RESPONSIVE DE PAGE BEBIDA=================*/
+/*MEDIA DE FORMULARIO CONTACTO*/
+@media(max-width:435px){
+    .contenidoForm{
+        width: min-content;
+        padding: 20px 5px;
+    }
+    .formulario{
+        width: min-content;
+        padding: 0 0 20px 0;
+    }
+}
+/*-----------------------------------*/
+/*=================INICIO ESTILOS FOOTER:SIST RESPONSIVO==================*/
+@media (max-width:768px){
+    .logoFooter img{
+        height: 70px;   
+    }
+    .redes{
+        height: 50px;
+    }
+    .df-links {
+        font-size: 10px;
+    }
+}
+@media (max-width:425px){
+    .bg-footer{
+        align-items: center;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .bg-footer .logoFooter img{
+        height: 80px;
+    }
+    .bg-footer .redes{
+        height: 50px;
+        font-size: 20px;
+    }
+    .bg-footer .df-links li {
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+/*======================================================================*/
