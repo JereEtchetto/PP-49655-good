@@ -1,0 +1,44 @@
+/*==================INICIO HEADER==========================*/
+.navbar{
+    background-color: #333333;
+    opacity: 0.9;
+    z-index: 800;
+}
+.navbar-nav{
+    justify-content:center;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.navbar .nav-link {
+    color: #fff;
+}
+.navbar .nav-link:hover{
+    transform: scale(1.2);
+    color: #ce7d35;
+}
+.navbar-nav .nav-item .nav-link.active{
+    color:#fff;
+}
+.navbar-nav .nav-item .nav-link.active:hover{
+    transform: scale(1.2);
+    color: #ce7d35;
+}
+.navbar-toggler{
+    color: #f3ebeb !important;
+}
+.logoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 100px;
+}
+
+.logoBody img {
+    height: 70px;
+    transition:all 0.3s;
+}
+.logoBody img:hover{
+    transform: scale(1.3);
+}

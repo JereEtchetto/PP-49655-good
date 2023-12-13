@@ -1,0 +1,38 @@
+/*========================INICIO MAIN PRINCIPAL===============================*/
+.banner {
+    background-image:url(../images/fondoNegocio2.png);
+    background-size:cover;/*Define el tamaño de la imagen (alto y ancho)*/
+    min-height: 100vh;
+    height: 100vh;
+    border-radius: 5%;
+}
+.banner .titulos{
+    height: 100%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulos h1,h2{
+    text-align: center;
+    font-family:'Fredoka', sans-serif;
+    font-weight:bold;
+    font-size: 80px;
+    font-style:inherit;
+    font-weight: unset;
+    letter-spacing: 5px;
+    color:hsla(252, 48%, 8%, 0.884);
+}
+.titulos h2{
+    font-size: 80px;
+    color:hsla(252, 48%, 8%, 0.884);
+}
+.fondo{
+    background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(199, 202, 204, 0.8));
+    width: auto;
+    padding-left: 50px;
+    font-family: 'Roboto';
+    font-size: 115%;
+    padding-top: 15px;
+}
