@@ -1,13 +1,15 @@
 /*========================INICIO MAIN PRINCIPAL===============================*/
 .banner {
     background-image:url(../images/ultimoFondo.png);
-    background-size:cover;
+    background-size: cover;
+    max-width: 100%;
     min-height: 100vh;
     height: 80vh;
+    
 }
 .banner .titulos{
     height: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items:center;
     flex-direction: column;

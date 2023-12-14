@@ -18,25 +18,36 @@
 
 /*Responsive*/
 /*====================ESTILO MAIN RESPONSIVE=========================*/
-@media(max-width:768px){
-    .banner .titulos h1{
-        font-size: 40px;
+@media(max-width:990px){
+    .banner{
+        background-size: cover;
+        max-width: 100%;
     }
-    .banner .titulos h2{
+}
+
+@media(max-width:768px){
+    .banner{
+        .titulos h1{
+            font-size: 40px;
+        } 
+        .titulos h2{
         font-size: 40px;
+        }
     }
 }
 @media (max-width:375px){
-    .banner .titulos h1{
+    .banner {
+        .titulos h1{
         font-size: 17px;
-    }
-    .banner .titulos h2{
+        }
+        .titulos h2{
         font-size: 17px;
-    }
+        }
     .banner{
-        height: 50vh;
+        background-size:contain;
+        }
     }
-}
+}   
 /*======================FIN ESTILO RESPONSIVE MAIN====================================*/
 /*=======================ESTILOS PAGE BEBIDAS: SIST RESPONSIVO ========================*/
 @media (max-width:768px) {
