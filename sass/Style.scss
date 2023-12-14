@@ -6,6 +6,7 @@
 @import"bebidas/estiloBebidas";
 @import"comoComprar/estiloComoComp";
 @import"contacto/estiloContacto";
+@import"conocenos/estiloConocenos";
 @import"footer";
 
 /*=====================FUENTES===================================*/
@@ -20,13 +21,17 @@
 /*====================ESTILO MAIN RESPONSIVE=========================*/
 @media(max-width:990px){
     .banner{
-        background-size: cover;
+        background-size: auto;
         max-width: 100%;
+        padding-top: 15px;
     }
 }
 
 @media(max-width:768px){
     .banner{
+        background-size: cover;
+        max-width: 100%;
+        margin: 0;
         .titulos h1{
             font-size: 40px;
         } 
@@ -35,19 +40,34 @@
         }
     }
 }
-@media (max-width:375px){
-    .banner {
+@media (max-width:575px){
+    .banner{
+        background-size: 100%;
+        max-width: 100%;
+        min-height: 70vh;
         .titulos h1{
-        font-size: 17px;
+        font-size: 35px;
         }
         .titulos h2{
-        font-size: 17px;
-        }
-    .banner{
-        background-size:contain;
+        font-size: 35px;
         }
     }
-}   
+}  
+
+@media(max-width:370px){
+    .banner{
+        background-size: cover;
+        max-width: 100%;
+        margin: 0;
+        min-height: 70vh;
+        .titulos h1{
+            font-size: 15px;
+        }
+        .titulos h2{
+            font-size: 15px;
+        }
+    }
+}
 /*======================FIN ESTILO RESPONSIVE MAIN====================================*/
 /*=======================ESTILOS PAGE BEBIDAS: SIST RESPONSIVO ========================*/
 @media (max-width:768px) {
@@ -84,14 +104,14 @@
 }
 /*===============FIN ESTILO RESPONSIVE DE PAGE BEBIDA=================*/
 /*MEDIA DE FORMULARIO CONTACTO*/
-@media(max-width:435px){
+@media(max-width:494px){
     .contenidoForm{
         width: min-content;
         padding: 20px 5px;
     }
     .formulario{
         width: min-content;
-        padding: 0 0 20px 0;
+        padding: 0 0 15px 0;
     }
 }
 /*-----------------------------------*/
