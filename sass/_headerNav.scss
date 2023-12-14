@@ -1,7 +1,7 @@
 /*==================INICIO HEADER==========================*/
 .navbar{
-    background-color: #333333;
-    opacity: 0.9;
+    background:linear-gradient(0deg, rgba(84,181,182,1) 1%, rgba(61,110,110,1) 42%, rgba(42,51,50,1) 88%);
+    opacity: 1;
     z-index: 800;
 }
 .navbar-nav{
@@ -15,14 +15,14 @@
 }
 .navbar .nav-link:hover{
     transform: scale(1.2);
-    color: #ce7d35;
+    color:#0C1212;
 }
 .navbar-nav .nav-item .nav-link.active{
     color:#fff;
 }
 .navbar-nav .nav-item .nav-link.active:hover{
     transform: scale(1.2);
-    color: #ce7d35;
+    color: #0C1212;
 }
 .navbar-toggler{
     color: #f3ebeb !important;

@@ -1,14 +1,13 @@
 /*========================INICIO MAIN PRINCIPAL===============================*/
 .banner {
-    background-image:url(../images/fondoNegocio2.png);
-    background-size:cover;/*Define el tamaño de la imagen (alto y ancho)*/
+    background-image:url(../images/ultimoFondo.png);
+    background-size:cover;
     min-height: 100vh;
-    height: 100vh;
-    border-radius: 5%;
+    height: 80vh;
 }
 .banner .titulos{
     height: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -16,23 +15,27 @@
 }
 .titulos h1,h2{
     text-align: center;
-    font-family:'Fredoka', sans-serif;
+    font-family:'Fredoka';
     font-weight:bold;
     font-size: 80px;
     font-style:inherit;
     font-weight: unset;
     letter-spacing: 5px;
-    color:hsla(252, 48%, 8%, 0.884);
+    color:whitesmoke;
 }
 .titulos h2{
     font-size: 80px;
-    color:hsla(252, 48%, 8%, 0.884);
+    color:whitesmoke;
 }
 .fondo{
-    background:linear-gradient(rgba(60, 64, 77, 0.8),rgba(199, 202, 204, 0.8));
+    background: linear-gradient(0deg, rgba(84,181,182,1) 1%, rgba(61,110,110,1) 42%, rgba(42,51,50,1) 88%);
     width: auto;
-    padding-left: 50px;
-    font-family: 'Roboto';
-    font-size: 115%;
+    padding-left: 70px;
     padding-top: 15px;
+}
+.encabezado{
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 25px;
 }
