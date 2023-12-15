@@ -1,20 +1,15 @@
-.containercarousel{
+.df-conocenos{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:linear-gradient(0deg, rgba(84,181,182,1) 1%, rgba(61,110,110,1) 42%, rgba(42,51,50,1) 88%);
-    h1{
-        color: white;
-    }
-    h3{
-        color: white;
-    }
-    #carouselExampleCaptions{
-        .carousel-item img{
-            height: 80vh;
-            width: 100%;
-            margin: 15px 0 ;
+    background:linear-gradient(188deg, rgba(84,181,182,1) 1%, rgba(61,110,110,1) 42%, rgba(42,51,50,1) 88%);;
+    .df-carouse{
+        width: 100vh;
+        .carousel-item{
+            .d-block{
+                width: 100% !important;
+            }
         }
     }
 }

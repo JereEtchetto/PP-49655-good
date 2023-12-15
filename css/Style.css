@@ -311,23 +311,18 @@ a, li {
 }
 
 /*=========== FIN DE PAGINA: CONTACTO====================================*/
-.containercarousel {
+.df-conocenos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(0deg, rgb(84, 181, 182) 1%, rgb(61, 110, 110) 42%, rgb(42, 51, 50) 88%);
+  background: linear-gradient(188deg, rgb(84, 181, 182) 1%, rgb(61, 110, 110) 42%, rgb(42, 51, 50) 88%);
 }
-.containercarousel h1 {
-  color: white;
+.df-conocenos .df-carouse {
+  width: 100vh;
 }
-.containercarousel h3 {
-  color: white;
-}
-.containercarousel #carouselExampleCaptions .carousel-item img {
-  height: 80vh;
-  width: 100%;
-  margin: 15px 0;
+.df-conocenos .df-carouse .carousel-item .d-block {
+  width: 100% !important;
 }
 
 /*==========================INICIO FOOTER=====================*/
@@ -474,6 +469,13 @@ a, li {
   }
 }
 /*-----------------------------------*/
+/*=======ESTILO RESPONSIVE: CONOCENOS*/
+@media (max-width: 720px) {
+  .carousel-item .d-block {
+    background-size: cover !important;
+  }
+}
+/*=====================================*/
 /*=================INICIO ESTILOS FOOTER:SIST RESPONSIVO==================*/
 @media (max-width: 768px) {
   .logoFooter img {

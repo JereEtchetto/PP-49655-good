@@ -115,6 +115,18 @@
     }
 }
 /*-----------------------------------*/
+/*=======ESTILO RESPONSIVE: CONOCENOS*/
+@media(max-width:720px){
+    .carousel-item{
+        .d-block{
+            background-size: cover !important;
+        }
+    }
+}
+
+
+
+/*=====================================*/
 /*=================INICIO ESTILOS FOOTER:SIST RESPONSIVO==================*/
 @media (max-width:768px){
     .logoFooter img{
