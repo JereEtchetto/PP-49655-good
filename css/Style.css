@@ -70,7 +70,7 @@ a, li {
 
 /*========================INICIO MAIN PRINCIPAL===============================*/
 .banner {
-  background-image: url(../images/fondoNuevo.png);
+  background-image: url(../images/fondoNuevo1.png);
   background-size: cover;
   max-width: 100%;
   min-height: 100vh;
@@ -316,13 +316,17 @@ a, li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 18px;
+  color: beige;
   background: linear-gradient(188deg, rgb(84, 181, 182) 1%, rgb(61, 110, 110) 42%, rgb(42, 51, 50) 88%);
 }
-.df-conocenos .df-carouse {
-  width: 100vh;
+.df-conocenos .texto {
+  display: flex;
+  margin: 15px;
 }
-.df-conocenos .df-carouse .carousel-item .d-block {
-  width: 100% !important;
+.df-conocenos .texto .imgNosotros {
+  padding-left: 25px;
+  border-radius: 3%;
 }
 
 /*==========================INICIO FOOTER=====================*/
