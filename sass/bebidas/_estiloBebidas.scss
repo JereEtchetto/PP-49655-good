@@ -1,8 +1,55 @@
 /*======================INICIO PAGES BEBIDAS============================*/
+.bannerBebidas{
+    background-image:url(../images/fondoNuevo1.png);
+    background-size:cover;
+    max-width: 100%;
+    height: 75vh;
+    
+    .titulosBebidas{
+        height: 100%;
+        backdrop-filter: blur(3px);
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            text-align: center;
+            font-family:'Fredoka';
+            font-weight:bold;
+            font-size: 45px;
+            font-style:inherit;
+            font-weight: unset;
+            letter-spacing: 5px;
+            color:whitesmoke;
+        }
+        img{
+            margin-top: 25px;
+            width:80px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+    }
+} 
+.banTitulo2{
+    background:#2A3332;
+    height: 25vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Titulo2{
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
 
 .accordion-button{
     font-family: 'Roboto';
-    font-size:18px !important;
+    font-size:15px !important;
 }
 .containerBebidas {
     background-image: url(../images/bebidas3.jpg);
