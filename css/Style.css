@@ -117,17 +117,18 @@ a, li {
 }
 
 /*============================INICIO DE BLOQUE OFERTAS==================================*/
-.ofertasFlex {
+#contenedorFlex {
   width: 100%;
+  max-width: 2000px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
   flex-wrap: wrap;
   background-color: #2A3332;
 }
-
-.flex1 {
+#contenedorFlex .contenedorItems {
   display: flex;
   width: 280px;
   height: 350px;
@@ -136,26 +137,50 @@ a, li {
   align-content: space-around;
   justify-content: center;
   flex-direction: column;
-  border-radius: 15%;
+  border-radius: 20px 20px 20px 20px;
+  transition: all 0.5s;
 }
-
-.flex1 img {
-  width: 190px;
-  height: 190px;
+#contenedorFlex .contenedorItems img {
+  width: 180px;
+  height: 200px;
+  object-fit: contain;
 }
-
-.flex1 h3, h4 {
-  text-align: center;
-  color: white;
-  padding: 5px;
-  font-size: 22px;
+#contenedorFlex .contenedorItems .informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+#contenedorFlex .contenedorItems .informacion p:first-child {
   font-family: "Roboto";
-  padding-top: 5px;
-}
-
-.flex1 h4 {
+  font-size: 18px;
   color: white;
+  font-weight: 400;
+}
+#contenedorFlex .contenedorItems .informacion .precio {
+  font-size: 15px;
+  font-weight: 550;
+  color: white;
+}
+#contenedorFlex .contenedorItems .informacion .btnItems {
+  background-color: #1D3330;
+  font-family: "Roboto";
   font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+}
+#contenedorFlex .contenedorItems .informacion .btnItems:hover {
+  background-color: whitesmoke;
+}
+#contenedorFlex .contenedorItems:hover {
+  background-color: #77A19C;
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
 }
 
 /*======================INICIO PAGES BEBIDAS============================*/
