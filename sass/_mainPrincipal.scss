@@ -5,38 +5,42 @@
     max-width: 100%;
     min-height: 100vh;
     height: 80vh;
+    .titulos{
+        height: 100%;
+        backdrop-filter: blur(3px);
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        h1,h2{
+            text-align: center;
+            font-family:'Fredoka';
+            font-weight:bold;
+            font-size: 65px;
+            font-style:inherit;
+            font-weight: unset;
+            letter-spacing: 5px;
+            color:whitesmoke;
+        }
+        h2{
+            font-size: 80px;
+            color:whitesmoke;
+        }
+    }
 }
-.banner .titulos{
-    height: 100%;
-    backdrop-filter: blur(3px);
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    justify-content: center;
-}
-.titulos h1,h2{
-    text-align: center;
-    font-family:'Fredoka';
-    font-weight:bold;
-    font-size: 65px;
-    font-style:inherit;
-    font-weight: unset;
-    letter-spacing: 5px;
-    color:whitesmoke;
-}
-.titulos h2{
-    font-size: 80px;
-    color:whitesmoke;
-}
+
+
+
+
 .fondo{
     background: linear-gradient(0deg, rgba(84,181,182,1) 1%, rgba(61,110,110,1) 42%, rgba(42,51,50,1) 88%);
     width: auto;
     padding-left: 70px;
     padding-top: 15px;
-}
-.encabezado{
-    margin-bottom: 0;
-    color: black;
-    font-family: 'Roboto';
-    font-size: 25px;
+    .encabezado{
+        margin-bottom: 0;
+        color: black;
+        font-family: 'Roboto';
+        font-size: 25px;
+    }
 }

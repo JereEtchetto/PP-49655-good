@@ -84,38 +84,34 @@
     }
 }
 
-
-.table{
-    width: 100%;
-    border: 1px solid #463a3a;
-    border-collapse:collapse; /*Esta propiedad estable si los bordes de la tabla deben colapsarse en un solo borde o separarse*/
-    margin: 0;
-    padding: 0;
-    table-layout:fixed; /*TE AYUDA A CARGAR MAS RAPIDO LOS DATOS Y SE ACOMODAN LOS ANCHOS DE LA TABLA*/
-}
-
-/*Modificamos las filas de la tabla*/
-.table tr{
-    border: 1px solid #1d0606;
-}
-/*Modificamos los titulos y datos de la tabla*/
-.table th, .table td{
-    font-size: 17px;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Roboto';
-}
-.table thead th{
-    text-transform: uppercase;
-    background-color: #f3ebeb;
-}
-
-.table tbody tr:hover{
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
-.table tbody td:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+.accordion-body{
+    .table{
+        width: 100%;
+        border: 1px solid #463a3a;
+        border-collapse:collapse; /*Esta propiedad estable si los bordes de la tabla deben colapsarse en un solo borde o separarse*/
+        margin: 0;
+        padding: 0;
+        table-layout:fixed; /*TE AYUDA A CARGAR MAS RAPIDO LOS DATOS Y SE ACOMODAN LOS ANCHOS DE LA TABLA*/
+        .table tr{
+            border: 1px solid #1d0606;
+        }
+        .table th, .table td{
+            font-size: 17px;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Roboto';
+        }
+        .table thead th{
+            text-transform: uppercase;
+            background-color: #f3ebeb;
+        }
+        .table tbody tr:hover{
+            background-color: rgba(0, 0, 0, 0.2)
+        }
+        .table tbody td:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
 }
 
 /*===========================FIN PAGE: BEBIDAS======================*/
