@@ -207,11 +207,6 @@ a, li {
   margin-bottom: auto;
 }
 
-.accordion-button {
-  font-family: "Roboto";
-  font-size: 15px !important;
-}
-
 .containerBebidas {
   background-image: url(../images/bebidas3.jpg);
   background-size: contain;
@@ -221,19 +216,31 @@ a, li {
   justify-content: flex-start;
   flex-direction: column;
 }
-
-#accordionFlushExample {
+.containerBebidas #accordionFlushExample {
   margin-top: 30px;
   width: 50%;
   margin-left: 25%;
-  opacity: 0.9;
 }
-
-#accordionFlushExample1 {
+.containerBebidas #accordionFlushExample .accordion-button {
+  font-size: 16px !important;
+  display: flex;
+  flex-direction: column;
+}
+.containerBebidas #accordionFlushExample .accordion-button img {
+  width: 55px;
+}
+.containerBebidas #accordionFlushExample1 {
   width: 50%;
   margin-left: 25%;
-  opacity: 0.9;
   margin-bottom: 30px;
+}
+.containerBebidas #accordionFlushExample1 .accordion-button {
+  font-size: 16px !important;
+  display: flex;
+  flex-direction: column;
+}
+.containerBebidas #accordionFlushExample1 .accordion-button img {
+  width: 55px;
 }
 
 .table {
@@ -548,7 +555,7 @@ a, li {
     margin: 0;
   }
   .df-conocenos .texto .imgNosotros {
-    width: 150px;
+    width: fit-content;
   }
   .df-conocenos .texto .imgNosotros img {
     width: 200px;
