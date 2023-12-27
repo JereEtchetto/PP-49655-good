@@ -16,10 +16,14 @@ a, li {
 }
 
 /*==================INICIO HEADER==========================*/
+.navbar {
+  padding: 0;
+}
 .navbar .container-fluid {
   background: linear-gradient(0deg, rgb(84, 181, 182) 1%, rgb(61, 110, 110) 42%, rgb(42, 51, 50) 88%);
   opacity: 1;
   z-index: 800;
+  padding: 0;
 }
 .navbar .container-fluid .logoBody {
   display: flex;
@@ -86,11 +90,11 @@ a, li {
   font-style: inherit;
   font-weight: unset;
   letter-spacing: 5px;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 .banner .titulos h2 {
   font-size: 80px;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 .fondo {
@@ -145,13 +149,13 @@ a, li {
 #contenedorFlex .contenedorItems .informacion p:first-child {
   font-family: "Roboto";
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   font-weight: 400;
 }
 #contenedorFlex .contenedorItems .informacion .precio {
   font-size: 15px;
   font-weight: 550;
-  color: white;
+  color: #ffffff;
 }
 #contenedorFlex .contenedorItems .informacion .btnItems {
   background-color: #1D3330;
@@ -165,7 +169,7 @@ a, li {
   border: none;
 }
 #contenedorFlex .contenedorItems .informacion .btnItems:hover {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 #contenedorFlex .contenedorItems:hover {
   background-color: #77A19C;
@@ -196,7 +200,7 @@ a, li {
   font-style: inherit;
   font-weight: unset;
   letter-spacing: 5px;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 .bannerBebidas .titulosBebidas img {
   margin-top: 25px;
@@ -211,7 +215,7 @@ a, li {
 .banTitulo2 {
   background: #2A3332;
   height: 25vh;
-  color: white;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +300,7 @@ a, li {
   background-color: #92B3AF;
   width: 100%;
 }
-.indicacion .containerConsulta h1 {
+.indicacion .containerConsulta h2 {
   margin-top: 15px;
 }
 .indicacion .containerConsulta #accordionExample {
@@ -314,7 +318,7 @@ a, li {
   flex-direction: column;
   background: #2a3332;
 }
-.df-Contacto h1 {
+.df-Contacto h2 {
   margin-top: 20px;
   font-family: "Roboto";
   font-size: 50px;
@@ -330,7 +334,7 @@ a, li {
   margin: 10px 0;
   border-radius: 8px;
   padding: 15px;
-  color: white;
+  color: #ffffff;
   background: linear-gradient(0deg, rgb(84, 181, 182) 0%, rgb(29, 27, 21) 100%);
 }
 .df-Contacto .formulario .contenidoForm {
@@ -383,16 +387,22 @@ a, li {
   align-items: center;
   flex-direction: column;
   font-size: 18px;
-  color: beige;
+  color: #f5f5dc;
   background: linear-gradient(188deg, rgb(84, 181, 182) 1%, rgb(61, 110, 110) 42%, rgb(42, 51, 50) 88%);
 }
 .df-conocenos .texto {
   display: flex;
   margin: 15px;
+  align-items: center;
+  gap: 10px;
 }
-.df-conocenos .texto .imgNosotros {
-  padding-left: 25px;
-  border-radius: 3%;
+.df-conocenos .texto .txtCuerpo {
+  text-align: center;
+  padding: 0 10px;
+  width: 40vw;
+}
+.df-conocenos .imgNosotros img {
+  border-radius: 15px;
 }
 
 /*==========================INICIO FOOTER=====================*/
@@ -544,14 +554,32 @@ a, li {
 }
 /*===============FIN ESTILO RESPONSIVE DE PAGE BEBIDA=================*/
 /*MEDIA DE FORMULARIO CONTACTO*/
-@media (max-width: 494px) {
-  .contenidoForm {
+@media (max-width: 768px) {
+  .df-Contacto h2 {
+    font-size: 20px;
+  }
+  .df-Contacto .formulario {
+    width: min-content;
+    padding: 0 0 15px 0;
+  }
+  .df-Contacto .formulario .contenidoForm {
     width: min-content;
     padding: 20px 5px;
   }
-  .formulario {
+  .df-Contacto .formulario .contenidoForm .inputForm {
+    width: 10px;
+  }
+}
+@media (max-width: 330px) {
+  .df-Contacto h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .df-Contacto h2 .formulario {
+    width: fit-content;
+  }
+  .df-Contacto h2 .formulario .contenidoForm {
     width: min-content;
-    padding: 0 0 15px 0;
   }
 }
 /*-----------------------------------*/
@@ -562,7 +590,8 @@ a, li {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
+    gap: 10px;
     margin: 0;
   }
   .df-conocenos .texto .imgNosotros {
@@ -571,6 +600,8 @@ a, li {
   .df-conocenos .texto .imgNosotros img {
     width: 200px;
     height: 200px;
+    border-radius: 5%;
+    padding: 10px;
   }
 }
 @media (max-width: 567px) {
@@ -613,4 +644,4 @@ a, li {
 }
 /*======================================================================*/
 
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */
